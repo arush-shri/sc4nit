@@ -34,5 +34,3 @@ def main():
 		scanner(host,ports)
 
 	sock.close()
-
-main()
