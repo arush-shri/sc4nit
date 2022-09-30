@@ -31,7 +31,7 @@ def make():
 	except:
 		print ("[!!]Unexpected error")
 
-if (os.getuid == 0):
+if (os.getuid() == 0):
 	make()
 else:
 	print ("[!!]Root privileges required")
