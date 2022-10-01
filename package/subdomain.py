@@ -36,7 +36,7 @@ def main():
 
 	global full_url
 
-	file = open("package/subdomains.txt", "r")
+	file = open("/usr/local/bin/package/subdomains.txt", "r")
 	for line in file:
 		word = line.strip()
 		full_url = word + "." + target
