@@ -30,7 +30,7 @@ def banner():
 def main():
 	global host
 	global sock
-	host = input("[*] Enter IP: ")
+	host = input("[*] Enter host: ")
 	port_range = input("[*] Enter range to scan: ")
 	port_range = port_range.split(",")
 
