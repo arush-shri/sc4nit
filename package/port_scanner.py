@@ -5,7 +5,8 @@ import pyfiglet
 import random
 from termcolor import colored
 
-def scanner(host,ports):
+def scanner(ports):
+	global host
 	global sock
 	sock = socket(AF_INET, SOCK_STREAM)
 	sock.settimeout(0.5)
@@ -25,6 +26,7 @@ def banner():
 
 
 def main():
+	global host
 	global sock
 	host = input("[*] Enter IP: ")
 	port_range = input("[*] Enter range to scan: ")
