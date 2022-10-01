@@ -33,6 +33,6 @@ def main():
 	port_range = port_range.split(",")
 
 	for ports in range(int(port_range[0]) , int(port_range[1]) + 1):
-		scanner(host,ports)
+		scanner(ports)
 
 	sock.close()
