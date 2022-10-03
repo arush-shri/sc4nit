@@ -7,6 +7,10 @@ try:
 except:
 	os.system("pip install socket")
 try:
+	import requests
+except:
+	os.system("pip install requests")
+try:
 	import pyfiglet
 except:
 	os.system("pip install pyfiglet")
