@@ -40,7 +40,8 @@ def choose():
 os.system("clear")
 banner()
 help_option = "subdomain finder  -->  Finds subdomain of given domain. It uses a subdomain prefix list located at /usr/local/bin/package/subdomains.txt. You can also append a new prefix to it.\nport scanner  -->  It scans port of given IP address or you can copy paste subdomain name displayed after using subdomain finder."
-if (sys.argv[1] == "-h"):
-	print (colored(help_option, 'blue'))
-
-choose()
+try:
+	if (sys.argv[1] == "-h"):
+		print (colored(help_option, 'blue'))
+except:
+	choose()
